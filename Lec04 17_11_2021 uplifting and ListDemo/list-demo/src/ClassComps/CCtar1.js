@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-const listPersons = [{ id: 1, name='avi' }, { id: 2, name='benny' }, { id: 3, name='charlie' }];
+const listPersons = [{ id: 1, name:'avi' }, { id: 2, name:'benny' }, { id: 3, name:'charlie' }];
 
 export default class CCtar1 extends Component {
   constructor(props) {
@@ -53,8 +53,8 @@ export default class CCtar1 extends Component {
 
     return (
       <div>
-        Name: <input type="text" onChange={this.cngTxtName} />
-        <button className="btn btn-success" onClick={this.btnAddPerson} >Add</button>
+        Name: <input type="text" onChange={this.cngTxtName} /> <br/>
+        <button className="btn btn-success" onClick={this.btnAddPerson} >Add</button> <br/> <br/>
         <ul className="list-group">
           {listPersonsStr}
         </ul>
